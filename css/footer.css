@@ -1,0 +1,16 @@
+.footer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+
+  border-top: 1px solid red;
+  background-color: greenyellow;
+}
+
+.footer-layout {
+  margin: 0 auto;
+  max-width: 1400px;
+}
