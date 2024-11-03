@@ -5,9 +5,13 @@
   width: 100%;
   height: 60px;
   z-index: 999;
-  border-bottom: 1px solid yellowgreen;
-
-  background-color: blueviolet;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  font-family: Pretendard Variable, Pretendard JP Variable, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial, Apple SD Gothic Neo, Nanum Gothic, Malgun Gothic,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(255, 255, 255, 0.88);
 }
 
 .header-layout {
@@ -24,16 +28,98 @@
   align-items: center;
   gap: 30px;
 }
-.header-logo a img {
+.header-logo {
   display: flex;
+  max-width: 170px;
+  min-width: 152px;
+  width: 12.1428571429%;
+}
+.header-logo a {
+  display: flex;
+}
+.header-logo a img {
+  object-fit: cover;
+  overflow: hidden;
   width: 112px;
   height: 32px;
-  object-fit: over;
-  overflow: hidden;
+}
+
+.employ {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.employ a {
+  display: flex;
+  align-items: center;
+}
+.employ a img {
+  margin: 0 4px 0 0;
+}
+.employ span {
+}
+.career {
+}
+.social {
+}
+.resume {
+}
+.gigs {
+}
+.more-menu {
+  cursor: pointer;
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  gap: 30px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.search a img {
+  width: 24px;
+  height: 24px;
+}
+
+.account {
+  width: 100%;
+  height: 100%;
+}
+.account button {
+  min-width: 48px;
+  height: 32px;
+  margin-left: 12px;
+  margin-right: 8px;
+  padding: 0 14px;
+  background-color: #ffffff;
+  color: rgb(0, 102, 255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.biz-service {
+  width: 100%;
+  height: 100%;
+}
+.biz-service button {
+  min-width: 48px;
+  height: 32px;
+  padding: 0 14px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
 }
