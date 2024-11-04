@@ -1,0 +1,128 @@
+.main-top-news {
+}
+.top-news-title {
+  display: flex;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.0194em;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.left-right-bt {
+  display: flex;
+}
+.left-bt {
+  transform: rotate(90deg);
+  background-color: #ffffff;
+  border: 1px solid rgba(111, 114, 123, 0.16);
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 32px;
+  height: 32px;
+}
+.left-bt img {
+  display: flex;
+  font-size: 20px;
+  margin-left: 7px;
+}
+.right-bt {
+  transform: rotate(-90deg);
+  background-color: #ffffff;
+  border: 1px solid rgba(111, 114, 123, 0.16);
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 32px;
+  height: 32px;
+}
+.right-bt img {
+  display: flex;
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+.top-news-wrap {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  justify-content: space-between;
+}
+.top-news-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.news-card-thum {
+  display: flex;
+  width: 264px;
+  height: 177px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  outline: 1px solid rgba(23, 23, 25, 0.05);
+  outline-offset: -1px;
+}
+
+.news-card-top {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.news-card-top span {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0145em;
+  font-weight: 600;
+  margin-right: 44px;
+  color: #ffffff;
+}
+.bookmark {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+.bookmark span {
+  display: block;
+  font-size: 24px;
+  color: #ffffff;
+}
+.bookmark img {
+  display: block;
+  font-size: 24px;
+}
+.news-card-des {
+  display: flex;
+  flex-direction: column;
+}
+.card-des-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.0057em;
+  margin-bottom: 4px;
+}
+.card-des1 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.0194em;
+  text-align: left;
+  color: rgba(55, 56, 60, 0.61);
+}
+.card-des2 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.0194em;
+  text-align: left;
+  color: rgba(55, 56, 60, 0.61);
+  margin-top: 2px;
+}

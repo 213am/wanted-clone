@@ -3,13 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/logo/Wanted_Symbol_Primary_Color.png" type="image/x-icon" />
-    <title>원티드</title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+    <link
+      rel="icon"
+      href="./images/logo/Wanted_Symbol_Primary_Color.png"
+      type="image/x-icon"
+    />
+    <title>원티드 - 일하는 사람들의 모든 가능성</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main-menu.css" />
+    <link rel="stylesheet" href="./css/main-top-news.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/chatbot.css" />
   </head>
@@ -17,146 +35,210 @@
     <header class="header">
       <div class="header-layout">
         <!-- 로고 및 메뉴바 -->
-        <ul class="header-left">
-          <li class="header-logo">
+        <div class="header-left-nav">
+          <div class="header-logo">
             <a href="/">
-              <img src="./images/wanted_svg/svg-image-1.svg" alt="wanted logo" />
+              <img
+                src="./images/wanted_svg/svg-image-1.svg"
+                alt="wanted logo"
+              />
             </a>
-          </li>
-          <li class="employ">
-            <a href="/">
-              <span><img src="./images/wanted_svg/svg-image-2.svg" alt="삼단바" /></span>
-              <span>채용</span>
-            </a>
-          </li>
-          <li class="career"><a href="/">커리어</a></li>
-          <li class="social"><a href="/">소셜</a></li>
-          <li class="resume"><a href="/">이력서</a></li>
-          <li class="gigs">
-            <a href="/">프리랜서</a>
-          </li>
-          <li class="more-menu">더보기</li>
-        </ul>
-        <!-- 검색, 회원가입, 로그인, 기업 서비스 -->
-        <ul class="header-right">
-          <li class="search">
-            <a href="/"> <img src="./images/wanted_svg/svg-image-4.svg" alt="검색" /></a>
-          </li>
-          <li class="account">
-            <button href="/"><span>회원가입/로그인</span></button>
-          </li>
-          <li class="biz-service">
-            <button href="/"><span>기업 서비스</span></button>
-          </li>
-        </ul>
+          </div>
+          <ul class="header-left">
+            <li class="employ">
+              <a href="/">
+                <span>
+                  <img src="./images/wanted_svg/svg-image-2.svg" alt="삼단바" />
+                  채용
+                </span>
+              </a>
+            </li>
+            <li class="career"><a href="/">커리어</a></li>
+            <li class="social"><a href="/">소셜</a></li>
+            <li class="resume"><a href="/">이력서</a></li>
+            <li class="freelancer">
+              <a href="/">프리랜서</a>
+            </li>
+            <li class="more-menu">더보기</li>
+          </ul>
+          <!-- 검색, 회원가입, 로그인, 기업 서비스 -->
+          <div class="header-right-nav">
+            <ul class="header-right">
+              <li class="search">
+                <a href="/">
+                  <img src="./images/wanted_svg/svg-image-4.svg" alt="검색" />
+                </a>
+              </li>
+              <li class="account">
+                <button href="/"><span>회원가입/로그인</span></button>
+              </li>
+              <li class="biz-service">
+                <button href="/"><span>기업 서비스</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
-      <div class="main-layout">
+      <section class="main-layout">
         <!-- 공지 및 안내 -->
-        <div class="main-notice">
-          <a class="notice-bt">
+        <section class="main-notice">
+          <a class="notice-bt" href="/">
             <span>
-              <img src="https://static.wanted.co.kr/images/action-bar/Gommy_Expect_1.webp" />
+              <img
+                src="https://static.wanted.co.kr/images/action-bar/Gommy_Expect_1.webp"
+              />
             </span>
-            <span>로그인하면 <b>연봉 정보, 이력서 샘플</b> 등 유용한 정보를 얻을 수 있어요.</span>
-            <span class="notice-bt-more"><img src="./images/wanted_svg/svg-image-6.svg>" /></span>
+            <span>
+              로그인하면 <b>연봉 정보, 이력서 샘플</b> 등 유용한 정보를 얻을 수
+              있어요.
+            </span>
+            <svg
+              class="notice-bt-more"
+              viewBox="0 0 12 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              class="wds-18j9ay2"
+            >
+              <path
+                d="M2.8637 4.86346C2.51223 5.21493 2.51223 5.78478 2.8637 6.13625L8.72731 11.9999L2.8637 17.8635C2.51223 18.2149 2.51223 18.7848 2.8637 19.1362C3.21517 19.4877 3.78502 19.4877 4.13649 19.1362L10.6365 12.6362C10.988 12.2848 10.988 11.7149 10.6365 11.3635L4.13649 4.86346C3.78502 4.51199 3.21517 4.51199 2.8637 4.86346Z"
+                fill="currentColor"
+              ></path>
+            </svg>
           </a>
-        </div>
+        </section>
         <!-- #Start# 메인 메뉴 -->
-        <ul class="main-menu">
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>채용공고</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>이력서 관리</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>커리어 조회</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>지원 현황</span>
-            </a>
-          </li>
-          <li class="career-coach">
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>커리어 코칭</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>다음 커리어 찾기</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>나만의 회사 찾기</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>직군별 연봉</span>
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <img src="./images/wanted_svg/svg-image-11.svg" />
-              <span>원티드 포인트</span>
-            </a>
-          </li>
-        </ul>
+        <section class="main-menu-sec">
+          <ul class="main-menu">
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon1.svg" />
+                <span>채용공고</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon2.svg" />
+                <span>이력서 관리</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon3.svg" />
+                <span>커리어 조회</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon4.svg" />
+                <span>지원 현황</span>
+              </a>
+            </li>
+            <li class="career-coach">
+              <a href="/">
+                <img src="./images/wanted_svg/icon5.svg" />
+                <span>커리어 코칭</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon6.svg" />
+                <span>다음 커리어 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon7.svg" />
+                <span>나만의 회사 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon8.svg" />
+                <span>직군별 연봉</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./images/wanted_svg/icon9.svg" />
+                <span>원티드 포인트</span>
+              </a>
+            </li>
+          </ul>
+        </section>
         <!-- #End# 메인 메뉴 -->
         <!-- #Start# 인기 소식 -->
         <div class="main-top-news">
           <div class="top-news-title">
-            <span class="title">모두가 주목하고 있어요!</span>
-            <button>< ></button>
+            <span>모두가 주목하고 있어요!</span>
+            <div class="left-right-bt">
+              <button class="left-bt">
+                <img src="./images/wanted_svg/svg-image-3.svg" />
+              </button>
+              <button class="right-bt">
+                <img src="./images/wanted_svg/svg-image-3.svg" />
+              </button>
+            </div>
           </div>
           <ul class="top-news-wrap">
             <li class="top-news-card">
               <a href="/">
-                <img src="./images/etc/35.webp" />
+                <img class="news-card-thum" src="./images/etc/35.webp" />
+                <div class="news-card-top">
+                  <span>합격보상금 100만원</span>
+                  <button class="bookmark">
+                    <span>
+                      <img src="./images/wanted_svg/svg-image-16.svg" />
+                    </span>
+                  </button>
+                </div>
                 <div class="news-card-des">
-                  <span class="card-des-title">백엔드 디자이너</span>
-                  <span class="card-des">포스타입</span>
-                  <span class="card-des">서울 강남구 · 신입-경력 10년</span>
+                  <span class="card-des-title">백엔드 엔지니어</span>
+                  <span class="card-des1">포스타입</span>
+                  <span class="card-des2">서울 강남구 · 신입-경력 10년</span>
                 </div>
               </a>
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img src="./images/etc/49.webp" />
-                <span></span>
-                <span></span>
+                <img class="news-card-thum" src="./images/etc/35.webp" />
+                <div class="news-card-des">
+                  <span class="card-des-title">프론트엔드 엔지니어</span>
+                  <span class="card-des1">포스타입</span>
+                  <span class="card-des2">서울 강남구 · 신입-경력 10년</span>
+                </div>
               </a>
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img src="./images/etc/35.webp" />
-                <span></span>
-                <span></span>
+                <img class="news-card-thum" src="./images/etc/49.webp" />
+                <div class="news-card-des">
+                  <span class="card-des-title">Backend Engineer</span>
+                  <span class="card-des1">티맵모빌리티</span>
+                  <span class="card-des2">서울 중구 · 경력 2년 이상</span>
+                </div>
               </a>
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img src="./images/etc/58.webp" />
-                <span></span>
-                <span></span>
+                <img class="news-card-thum" src="./images/etc/28.webp" />
+                <div class="news-card-des">
+                  <span class="card-des-title">Software Engineer, Data</span>
+                  <span class="card-des1">당근마켓</span>
+                  <span class="card-des2">서울 서초구 · 신입</span>
+                </div>
+              </a>
+            </li>
+            <li class="top-news-card">
+              <a href="/">
+                <img class="news-card-thum" src="./images/etc/07.webp" />
+                <div class="news-card-des">
+                  <span class="card-des-title">[채널톡] Software Engineer</span>
+                  <span class="card-des1">채널코퍼레이션</span>
+                  <span class="card-des2">서울 강남구 · 경력 1-10년</span>
+                </div>
               </a>
             </li>
           </ul>
@@ -314,7 +396,7 @@
           </ul>
         </div>
         <!-- #End# 트렌드 포지션 -->
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-layout">
