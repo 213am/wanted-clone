@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main-menu.css" />
     <link rel="stylesheet" href="./css/main-top-news.css" />
+    <link rel="stylesheet" href="./css/main-new-news.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/chatbot.css" />
   </head>
@@ -174,10 +175,10 @@
           <div class="top-news-title">
             <span>모두가 주목하고 있어요!</span>
             <div class="left-right-bt">
-              <button class="left-bt">
+              <button id="" class="left-bt">
                 <img src="./images/wanted_svg/svg-image-3.svg" />
               </button>
-              <button class="right-bt">
+              <button id="" class="right-bt">
                 <img src="./images/wanted_svg/svg-image-3.svg" />
               </button>
             </div>
@@ -185,14 +186,18 @@
           <ul class="top-news-wrap">
             <li class="top-news-card">
               <a href="/">
-                <img class="news-card-thum" src="./images/etc/35.webp" />
-                <div class="news-card-top">
-                  <span>합격보상금 100만원</span>
-                  <button class="bookmark">
-                    <span>
-                      <img src="./images/wanted_svg/svg-image-16.svg" />
-                    </span>
-                  </button>
+                <div class="news-card-thum-layout">
+                  <img class="news-card-thum" src="./images/etc/35.webp" />
+                </div>
+                <div class="top-news-card-bg">
+                  <div class="news-card-top">
+                    <span>합격보상금 100만원</span>
+                    <button class="bookmark">
+                      <span>
+                        <img src="./images/wanted_svg/svg-image-16.svg" />
+                      </span>
+                    </button>
+                  </div>
                 </div>
                 <div class="news-card-des">
                   <span class="card-des-title">백엔드 엔지니어</span>
@@ -203,7 +208,19 @@
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img class="news-card-thum" src="./images/etc/35.webp" />
+                <div class="news-card-thum-layout">
+                  <img class="news-card-thum" src="./images/etc/35.webp" />
+                </div>
+                <div class="top-news-card-bg">
+                  <div class="news-card-top">
+                    <span>합격보상금 100만원</span>
+                    <button class="bookmark">
+                      <span>
+                        <img src="./images/wanted_svg/svg-image-16.svg" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
                 <div class="news-card-des">
                   <span class="card-des-title">프론트엔드 엔지니어</span>
                   <span class="card-des1">포스타입</span>
@@ -213,7 +230,19 @@
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img class="news-card-thum" src="./images/etc/49.webp" />
+                <div class="news-card-thum-layout">
+                  <img class="news-card-thum" src="./images/etc/49.webp" />
+                </div>
+                <div class="top-news-card-bg">
+                  <div class="news-card-top">
+                    <span>합격보상금 100만원</span>
+                    <button class="bookmark">
+                      <span>
+                        <img src="./images/wanted_svg/svg-image-16.svg" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
                 <div class="news-card-des">
                   <span class="card-des-title">Backend Engineer</span>
                   <span class="card-des1">티맵모빌리티</span>
@@ -223,7 +252,19 @@
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img class="news-card-thum" src="./images/etc/28.webp" />
+                <div class="news-card-thum-layout">
+                  <img class="news-card-thum" src="./images/etc/28.webp" />
+                </div>
+                <div class="top-news-card-bg">
+                  <div class="news-card-top">
+                    <span>합격보상금 100만원</span>
+                    <button class="bookmark">
+                      <span>
+                        <img src="./images/wanted_svg/svg-image-16.svg" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
                 <div class="news-card-des">
                   <span class="card-des-title">Software Engineer, Data</span>
                   <span class="card-des1">당근마켓</span>
@@ -233,7 +274,19 @@
             </li>
             <li class="top-news-card">
               <a href="/">
-                <img class="news-card-thum" src="./images/etc/07.webp" />
+                <div class="news-card-thum-layout">
+                  <img class="news-card-thum" src="./images/etc/07.webp" />
+                </div>
+                <div class="top-news-card-bg">
+                  <div class="news-card-top">
+                    <span>합격보상금 100만원</span>
+                    <button class="bookmark">
+                      <span>
+                        <img src="./images/wanted_svg/svg-image-16.svg" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
                 <div class="news-card-des">
                   <span class="card-des-title">[채널톡] Software Engineer</span>
                   <span class="card-des1">채널코퍼레이션</span>
@@ -247,30 +300,55 @@
         <!-- 새로운 소식 -->
         <div class="main-new-news">
           <div class="new-news-title">
-            <span class="title">지금 주목할 소식</span>
-            <button>< ></button>
+            <span>지금 주목할 소식</span>
+            <div class="left-right-bt">
+              <button id="" class="left-bt">
+                <img src="./images/wanted_svg/svg-image-3.svg" />
+              </button>
+              <button id="" class="right-bt">
+                <img src="./images/wanted_svg/svg-image-3.svg" />
+              </button>
+            </div>
           </div>
-          <ul class="new-news-wrap">
+          <ul class="new-news-card-wrap">
             <li class="new-news-card">
-              <a href="/">
-                <img />
-                <span></span>
-                <span></span>
-              </a>
+              <div class="new-news-card-layout">
+                <a href="#">
+                  <!-- <img src="./images/etc/03.webp" /> -->
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2540%2Fe1da3de2.thumb_1006_280.png&w=900&q=100"
+                  />
+                  <div class="news-card-bottom">
+                    <h4>한계를 넘는 프리미엄 정수력</h4>
+                    <span>바디럽 퓨어썸 시그니처 세면대용 필터</span>
+                  </div>
+                </a>
+              </div>
             </li>
             <li class="new-news-card">
-              <a href="/">
-                <img />
-                <span></span>
-                <span></span>
-              </a>
+              <div class="new-news-card-layout">
+                <a href="#">
+                  <img src="./images/etc/04.webp" />
+                  <div class="news-card-bottom">
+                    <h4>직장인을 위한 토크 콘서트 & 공연</h4>
+                    <span>
+                      실리카겔, 김계란, 이재용 회계사, 면접왕 이형 등 영감 가득
+                      라인업
+                    </span>
+                  </div>
+                </a>
+              </div>
             </li>
             <li class="new-news-card">
-              <a href="/">
-                <img />
-                <span></span>
-                <span></span>
-              </a>
+              <div class="new-news-card-layout">
+                <a href="#">
+                  <img src="./images/etc/05.webp" />
+                  <div class="news-card-bottom">
+                    <h4>일할 맛 나는, 고운세상코스메틱</h4>
+                    <span>지금 적극 채용 중!</span>
+                  </div>
+                </a>
+              </div>
             </li>
           </ul>
         </div>

@@ -9,18 +9,19 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .left-right-bt {
   display: flex;
 }
 .left-bt {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(111, 114, 123, 0.16);
   transform: rotate(90deg);
   background-color: #ffffff;
-  border: 1px solid rgba(111, 114, 123, 0.16);
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 32px;
-  height: 32px;
 }
 .left-bt img {
   display: flex;
@@ -28,14 +29,14 @@
   margin-left: 7px;
 }
 .right-bt {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(111, 114, 123, 0.16);
   transform: rotate(-90deg);
   background-color: #ffffff;
-  border: 1px solid rgba(111, 114, 123, 0.16);
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 32px;
-  height: 32px;
 }
 .right-bt img {
   display: flex;
@@ -49,20 +50,50 @@
   height: 260px;
   justify-content: space-between;
 }
-.top-news-card a {
-  display: block;
-  width: 100%;
-  height: 100%;
+
+.top-news-card {
   position: relative;
 }
+.top-news-card a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.top-news-card a:hover {
+  .news-card-thum {
+    transform: scale(1.03);
+  }
+}
+
+.news-card-thum-layout {
+  width: 264px;
+  height: 177px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
 .news-card-thum {
   display: flex;
   width: 264px;
   height: 177px;
-  border-radius: 12px;
-  margin-bottom: 12px;
   outline: 1px solid rgba(23, 23, 25, 0.05);
   outline-offset: -1px;
+  transition: transform 0.3s;
+}
+
+.top-news-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  z-index: 1;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-image: linear-gradient(0deg, transparent 0, rgba(0, 0, 0, 0.35));
 }
 
 .news-card-top {
@@ -70,34 +101,36 @@
   position: absolute;
   top: 15px;
   left: 15px;
+  width: 100%;
 }
 .news-card-top span {
+  color: #ffffff;
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.0145em;
-  font-weight: 600;
   margin-right: 44px;
-  color: #ffffff;
 }
 .bookmark {
   display: flex;
   position: absolute;
   top: 0px;
-  right: -100px;
+  right: 15px;
   width: 40px;
   height: 40px;
-  background: none;
   border: none;
+  background: none;
 }
 .bookmark span {
   display: block;
-  font-size: 24px;
-  color: #ffffff;
 }
 .bookmark img {
   display: block;
-  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
 }
+
 .news-card-des {
   display: flex;
   flex-direction: column;
@@ -110,19 +143,19 @@
   margin-bottom: 4px;
 }
 .card-des1 {
+  color: rgba(55, 56, 60, 0.61);
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.0194em;
   text-align: left;
-  color: rgba(55, 56, 60, 0.61);
 }
 .card-des2 {
+  color: rgba(55, 56, 60, 0.61);
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.0194em;
   text-align: left;
-  color: rgba(55, 56, 60, 0.61);
   margin-top: 2px;
 }
