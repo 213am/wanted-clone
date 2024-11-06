@@ -18,30 +18,39 @@
   height: 32px;
   border: 1px solid rgba(111, 114, 123, 0.16);
   transform: rotate(90deg);
-  background-color: #ffffff;
+  background-color: none;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 .left-bt img {
   display: flex;
   font-size: 20px;
   margin-left: 7px;
+  filter: invert(19%) sepia(9%) saturate(294%) hue-rotate(190deg)
+    brightness(99%) contrast(91%) opacity(16%);
 }
 .right-bt {
   width: 32px;
   height: 32px;
   border: 1px solid rgba(111, 114, 123, 0.16);
   transform: rotate(-90deg);
-  background-color: #ffffff;
+  background-color: none;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+.right-bt:hover {
+  background-color: rgba(23, 23, 25, 0.05);
 }
 .right-bt img {
   display: flex;
   font-size: 20px;
   margin-left: 7px;
+  filter: invert(67%) sepia(5%) saturate(350%) hue-rotate(184deg)
+    brightness(91%) contrast(90%);
 }
 
 .top-news-wrap {
@@ -82,6 +91,7 @@
   outline: 1px solid rgba(23, 23, 25, 0.05);
   outline-offset: -1px;
   transition: transform 0.3s;
+  object-fit: cover;
 }
 
 .top-news-card-bg {
@@ -114,21 +124,20 @@
 .bookmark {
   display: flex;
   position: absolute;
-  top: 0px;
-  right: 15px;
+  top: -1px;
+  right: 13px;
   width: 40px;
   height: 40px;
   border: none;
   background: none;
-}
-.bookmark span {
-  display: block;
+  cursor: pointer;
 }
 .bookmark img {
   display: block;
   width: 24px;
   height: 24px;
-  color: #ffffff;
+  filter: invert(100%) sepia(20%) saturate(3802%) hue-rotate(183deg)
+    brightness(114%) contrast(100%);
 }
 
 .news-card-des {

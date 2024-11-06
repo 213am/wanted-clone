@@ -1,0 +1,25 @@
+.main-loca-news {
+}
+.loca-news-title {
+  display: flex;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.0194em;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.loca-news-title span {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.012em;
+  font-weight: 600;
+  text-align: left;
+  color: #000000;
+}
+
+.loca-news-title-subway {
+  background-color: #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+}
